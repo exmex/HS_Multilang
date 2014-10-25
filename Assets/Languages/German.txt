@@ -4,6 +4,7 @@ English = English
 French = Français
 German = Deutsch
 
+Play_Button = Spielen
 Password2_Label = Passwort bestaetigen
 Email_Label = E-Mail Adresse
 Close_Label = Schliessen
