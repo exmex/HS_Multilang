@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: c3b8852aad313e246a54b3bf85ad0821
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - myCursor: {fileID: 2800000, guid: 6cc3749f465e8ac4f904de0c5f923136, type: 3}
+  - myClickCursor: {fileID: 2800000, guid: 54f50166b6d9c9f40a836572c8e1ae52, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 

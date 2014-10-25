@@ -1,0 +1,22 @@
+﻿Flag = Flag-GER
+Language = German
+English = English
+French = Français
+German = Deutsch
+
+Password2_Label = Passwort bestaetigen
+Email_Label = E-Mail Adresse
+Close_Label = Schliessen
+MsgBoxOk = Bestaetigen
+Announcements_BoxText = Ankuendigungen werden geladen...
+Announcements_BoxTitle = Ankuendigungen
+Login_Button = Einloggen
+Username_Label = Benutzername
+Password_Label = Passwort
+Settings_Button = Einstellungen
+Website_Button = Webseite
+Register_Button = Registrieren
+Exit_Button = Beenden
+Copyright = Copyright RageZone 2014. Alle Rechte vorbehalten
+
+TOS = Terms of use\n/ * Anyway, you do not see * /\nDisclaimer\nThis game is learning and research purposes only, please delete their own in 24 hours after download! Nothing to do with the author or legal liability arising therefrom!\n!!! Registration you agree !!!

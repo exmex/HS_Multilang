@@ -1,0 +1,32 @@
+fileFormatVersion: 2
+guid: ee64dd8fa7e06894cb431a3fb6fa8e7c
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - hero: {fileID: 2100000, guid: 8f80c8963b4721348a9f309f5881eaac, type: 2}
+  - azs: {fileID: 2100000, guid: f3d668c15ed1b8c4ebb0a7808ed2839b, type: 2}
+  - ams: {fileID: 2100000, guid: b76d2a68b5d5f984b9db1345f9ef14da, type: 2}
+  - adly: {fileID: 2100000, guid: a0936a7c80af7eb44b7f8f061182ef22, type: 2}
+  - asq: {fileID: 2100000, guid: be97e24ec87760246b5fa849d5c6c718, type: 2}
+  - afs: {fileID: 2100000, guid: 7dd75cf759772eb47bfe57065370265a, type: 2}
+  - alr: {fileID: 2100000, guid: e88c75804cdd0624abf99821f56d3e3f, type: 2}
+  - asm: {fileID: 2100000, guid: 37d7d508933169143a28c5512829effd, type: 2}
+  - ass: {fileID: 2100000, guid: 7bc94e8b013f97940a273429d7214aba, type: 2}
+  - adz: {fileID: 2100000, guid: 92be8abfb60d8a14185b857ecd16004f, type: 2}
+  - mzs: {fileID: 2100000, guid: 0b892f82d2361fe43be15319b5712e22, type: 2}
+  - mms: {fileID: 2100000, guid: 88ebea23f210f1b4aa78c5af9dc3f60c, type: 2}
+  - mzl: {fileID: 2100000, guid: 10488219286b72b40a661255ee54c75f, type: 2}
+  - mdly: {fileID: 2100000, guid: 95df166256c391f4a9a36b6ccced8f51, type: 2}
+  - msq: {fileID: 2100000, guid: 6ecd3797c328ebb4f8a89236709dcc36, type: 2}
+  - mfs: {fileID: 2100000, guid: 869decc897cd18a47b99313f17c29697, type: 2}
+  - mlr: {fileID: 2100000, guid: 45c7efb6089d9314bbf9b3868409e7cf, type: 2}
+  - msm: {fileID: 2100000, guid: 71ac79f27e5626d488937c9ce3f9e02e, type: 2}
+  - mss: {fileID: 2100000, guid: 16575a43762ea044aa0839e55153fe4d, type: 2}
+  - mdz: {fileID: 2100000, guid: 5bfb27c50ade5794e8d2c54c66362682, type: 2}
+  - common: {fileID: 2100000, guid: 35c5053acd0f3304db8c3d09ec9be007, type: 2}
+  - rare: {fileID: 2100000, guid: e7e05e2f63380ab4e89aa78fa4c28634, type: 2}
+  - epic: {fileID: 2100000, guid: 1aa6a935c191e2c4f8cc147d11454b72, type: 2}
+  - legendary: {fileID: 2100000, guid: 29c6fd46eb2edcd48b9b3d5f0698fb34, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 

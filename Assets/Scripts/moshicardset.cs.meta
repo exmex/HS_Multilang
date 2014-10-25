@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: 17fee8cd798e0394ca078f04b1a68114
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - zs: {fileID: 2100000, guid: 47b6a25d5ed826f4a99cc9abd2ac3f16, type: 2}
+  - sm: {fileID: 2100000, guid: 06d0e71bb1b975b42baf3e5a47888a2e, type: 2}
+  - dz: {fileID: 2100000, guid: 8a8336aa08de4674a92c810ef8323ecd, type: 2}
+  - sq: {fileID: 2100000, guid: 847830f44922a0d4aa5c7d77678aed2a, type: 2}
+  - lr: {fileID: 2100000, guid: a3ea405d5640f0f468f8e3f1ee971c4e, type: 2}
+  - dly: {fileID: 2100000, guid: 42bc1538df504ac4181e52df0e9d14b5, type: 2}
+  - ss: {fileID: 2100000, guid: 22e0ee5c010c3914592519c578c14e62, type: 2}
+  - fs: {fileID: 2100000, guid: 9cebe602a9a1a3842b3880493a195311, type: 2}
+  - ms: {fileID: 2100000, guid: cfa278af07e11694fa6cc464e6440bab, type: 2}
+  - lzs: {fileID: 2100000, guid: 74c32531fc5493e4d94bd27a6e07dc34, type: 2}
+  - lsm: {fileID: 2100000, guid: b20c446895ef5aa41aa75d90452b2a26, type: 2}
+  - ldz: {fileID: 2100000, guid: 3d8801bdf4f5ce8439faae8cfc98e4dd, type: 2}
+  - lsq: {fileID: 2100000, guid: 0a7eeec7801052548b68d1d512427521, type: 2}
+  - llr: {fileID: 2100000, guid: fbb31ad927bed3b4a827c17bcb19104e, type: 2}
+  - ldly: {fileID: 2100000, guid: 767ae523055fb4345b21a3321d1a0d52, type: 2}
+  - lss: {fileID: 2100000, guid: 54e38a31de448474d959a71215a8fb52, type: 2}
+  - lfs: {fileID: 2100000, guid: 8ea8816d20443a8478f90dcaa4b4711b, type: 2}
+  - lms: {fileID: 2100000, guid: 491a031d5538cd04c801861a52238314, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
