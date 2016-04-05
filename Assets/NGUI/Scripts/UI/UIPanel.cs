@@ -1,6 +1,6 @@
 //----------------------------------------------
 //            NGUI: Next-Gen UI kit
-// Copyright © 2011-2013 Tasharen Entertainment
+// Copyright Â© 2011-2013 Tasharen Entertainment
 //----------------------------------------------
 
 #if UNITY_FLASH || UNITY_WP8 || UNITY_METRO
@@ -1034,7 +1034,7 @@ public class UIPanel : MonoBehaviour
 			GameObject go = UnityEditor.Selection.activeGameObject;
 			bool selected = (go != null) && (NGUITools.FindInParents<UIPanel>(go) == this);
 
-			if (selected || clip || (mCam != null && mCam.isOrthoGraphic))
+			if (selected || clip || (mCam != null && mCam.orthographic))
 			{
 				if (size.x == 0f) size.x = mScreenSize.x;
 				if (size.y == 0f) size.y = mScreenSize.y;

@@ -11,16 +11,16 @@ public class SetCard : MonoBehaviour {
     }
     void addone(card i)
     {
-        animation["shownum"].speed = 1;
-        animation.Play("shownum");
+        GetComponent<Animation>()["shownum"].speed = 1;
+        GetComponent<Animation>().Play("shownum");
         
         info = i;
     }
     void subone()
     {
-        animation["shownum"].speed = -1;
-        animation["shownum"].time = animation["shownum"].length;
-        animation.Play("shownum");
+        GetComponent<Animation>()["shownum"].speed = -1;
+        GetComponent<Animation>()["shownum"].time = GetComponent<Animation>()["shownum"].length;
+        GetComponent<Animation>().Play("shownum");
         
         //更新info的信息
         info.insetcount--;
@@ -34,7 +34,7 @@ public class SetCard : MonoBehaviour {
     {
         info = i;
 
-        transform.FindChild("pic").transform.FindChild("pic").renderer.material = info.image;
+        transform.FindChild("pic").transform.FindChild("pic").GetComponent<Renderer>().material = info.image;
         transform.FindChild("cost").GetComponent<UILabel>().text = info.cost;
         
         if (info.cnname=="")

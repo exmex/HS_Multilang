@@ -120,10 +120,10 @@ public class open : MonoBehaviour {
     {
         if (canback)
         {
-            AnimationState a = animation["openup"];
+            AnimationState a = GetComponent<Animation>()["openup"];
             a.speed = -1;
             a.time = a.length;
-            animation.Play("openup");
+            GetComponent<Animation>().Play("openup");
 
             Camera.main.SendMessage("back");
             
@@ -133,8 +133,8 @@ public class open : MonoBehaviour {
     void show()
     {
         UpdateGoldText();
-        animation["openup"].speed = 1;
-        animation.Play("openup");
+        GetComponent<Animation>()["openup"].speed = 1;
+        GetComponent<Animation>().Play("openup");
         Camera.main.SendMessage("push");
     }
 }

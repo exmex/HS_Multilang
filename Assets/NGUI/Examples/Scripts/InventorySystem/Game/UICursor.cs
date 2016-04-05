@@ -1,6 +1,6 @@
 //----------------------------------------------
 //            NGUI: Next-Gen UI kit
-// Copyright © 2011-2012 Tasharen Entertainment
+// Copyright Â© 2011-2012 Tasharen Entertainment
 //----------------------------------------------
 
 using UnityEngine;
@@ -64,7 +64,7 @@ public class UICursor : MonoBehaviour
 				mTrans.position = uiCamera.ViewportToWorldPoint(pos);
 
 				// For pixel-perfect results
-				if (uiCamera.isOrthoGraphic)
+				if (uiCamera.orthographic)
 				{
 					mTrans.localPosition = NGUIMath.ApplyHalfPixelOffset(mTrans.localPosition, mTrans.localScale);
 				}

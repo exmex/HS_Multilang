@@ -37,9 +37,9 @@ public class btn : MonoBehaviour {
         }
         
 
-        if (animation!=null)
+        if (GetComponent<Animation>()!=null)
         {
-            animation.Play("btnanim");
+            GetComponent<Animation>().Play("btnanim");
         }
     }
     void OnMouseExit()

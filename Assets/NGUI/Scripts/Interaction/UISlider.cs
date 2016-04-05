@@ -1,6 +1,6 @@
 //----------------------------------------------
 //            NGUI: Next-Gen UI kit
-// Copyright © 2011-2013 Tasharen Entertainment
+// Copyright Â© 2011-2013 Tasharen Entertainment
 //----------------------------------------------
 
 using UnityEngine;
@@ -138,7 +138,7 @@ public class UISlider : IgnoreTimeScale
 	void Awake ()
 	{
 		mTrans = transform;
-		mCol = collider as BoxCollider;
+		mCol = GetComponent<Collider>() as BoxCollider;
 	}
 
 	/// <summary>
@@ -149,7 +149,7 @@ public class UISlider : IgnoreTimeScale
 	{
 		Init();
 
-		if (Application.isPlaying && thumb != null && thumb.collider != null)
+		if (Application.isPlaying && thumb != null && thumb.GetComponent<Collider>() != null)
 		{
 			UIEventListener listener = UIEventListener.Get(thumb.gameObject);
 			listener.onPress += OnPressThumb;

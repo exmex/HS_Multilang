@@ -17,18 +17,18 @@ public class dzturn : MonoBehaviour
     {
         if (dzcam.ismyturn)
         {
-            animation["dzturn"].speed = 1;
+            GetComponent<Animation>()["dzturn"].speed = 1;
             dzcam.ismyturn = false;
-            animation.Play("dzturn");
+            GetComponent<Animation>().Play("dzturn");
             //endturn
             Camera.main.SendMessage("endturn");
         }
     }
     void myturn()
     {
-        animation["dzturn"].speed = -1;
-        animation["dzturn"].time = 1;
-        animation.Play("dzturn");
+        GetComponent<Animation>()["dzturn"].speed = -1;
+        GetComponent<Animation>()["dzturn"].time = 1;
+        GetComponent<Animation>().Play("dzturn");
         dzcam.ismyturn = true;
     }
 }

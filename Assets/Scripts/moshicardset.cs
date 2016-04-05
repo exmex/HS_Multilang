@@ -24,55 +24,55 @@ public class moshicardset : MonoBehaviour {
            
 
             case CardClass.kdruid:
-                cpic.renderer.material = dly;
-                clogo.renderer.material = ldly;
+                cpic.GetComponent<Renderer>().material = dly;
+                clogo.GetComponent<Renderer>().material = ldly;
                 break;
 
             case CardClass.khunter:
-                cpic.renderer.material = lr;
-                clogo.renderer.material = llr;
+                cpic.GetComponent<Renderer>().material = lr;
+                clogo.GetComponent<Renderer>().material = llr;
                 break;
 
             case CardClass.kmage:
-                cpic.renderer.material = fs;
-                clogo.renderer.material = lfs;
+                cpic.GetComponent<Renderer>().material = fs;
+                clogo.GetComponent<Renderer>().material = lfs;
                 break;
 
             case CardClass.kpaladin:
-                cpic.renderer.material = sq;
-                clogo.renderer.material = lsq;
+                cpic.GetComponent<Renderer>().material = sq;
+                clogo.GetComponent<Renderer>().material = lsq;
                 break;
 
             case CardClass.kpriest:
-                cpic.renderer.material = ms;
-                clogo.renderer.material = lms;
+                cpic.GetComponent<Renderer>().material = ms;
+                clogo.GetComponent<Renderer>().material = lms;
                 break;
 
             case CardClass.krogue:
-                cpic.renderer.material = dz;
-                clogo.renderer.material = ldz;
+                cpic.GetComponent<Renderer>().material = dz;
+                clogo.GetComponent<Renderer>().material = ldz;
                 break;
 
             case CardClass.kshama:
-                cpic.renderer.material = sm;
-                clogo.renderer.material = lsm;
+                cpic.GetComponent<Renderer>().material = sm;
+                clogo.GetComponent<Renderer>().material = lsm;
                 break;
 
             case CardClass.kwarlock:
-                cpic.renderer.material = zs;
-                clogo.renderer.material = lzs;
+                cpic.GetComponent<Renderer>().material = zs;
+                clogo.GetComponent<Renderer>().material = lzs;
                 break;
 
             case CardClass.kwarrior:
-                cpic.renderer.material = ss;
-                clogo.renderer.material = lss;
+                cpic.GetComponent<Renderer>().material = ss;
+                clogo.GetComponent<Renderer>().material = lss;
                 break;
         }
     }
     public static set nowchoose;
     void OnMouseUpAsButton()
     {
-        Material classpic = transform.FindChild("cardsetdaiqi").FindChild("pic").renderer.material;
+        Material classpic = transform.FindChild("cardsetdaiqi").FindChild("pic").GetComponent<Renderer>().material;
         transform.root.SendMessage("setclass", info.classs);
         transform.root.SendMessage("setclasspic", classpic);
         transform.root.SendMessage("setClassname", info.name);

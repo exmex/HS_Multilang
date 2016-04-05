@@ -41,23 +41,23 @@ public class boxcam : MonoBehaviour
     }
     void push()
     {
-        animation["boxcampush"].speed = 1;
-        animation.Play("boxcampush");
-        box.animation["boxopendoor"].speed = 1;
-        box.animation.Play("boxopendoor");
+        GetComponent<Animation>()["boxcampush"].speed = 1;
+        GetComponent<Animation>().Play("boxcampush");
+        box.GetComponent<Animation>()["boxopendoor"].speed = 1;
+        box.GetComponent<Animation>().Play("boxopendoor");
 
 
     }
     void back()
     {
         UpdateGandEx();
-        animation["boxcampush"].speed = -1;
-        animation["boxcampush"].time = animation["boxcampush"].length;
-        animation.Play("boxcampush");
+        GetComponent<Animation>()["boxcampush"].speed = -1;
+        GetComponent<Animation>()["boxcampush"].time = GetComponent<Animation>()["boxcampush"].length;
+        GetComponent<Animation>().Play("boxcampush");
 
-        box.animation["boxopendoor"].speed = -1;
-        box.animation["boxopendoor"].time = box.animation["boxopendoor"].length;
-        box.animation.Play("boxopendoor");
+        box.GetComponent<Animation>()["boxopendoor"].speed = -1;
+        box.GetComponent<Animation>()["boxopendoor"].time = box.GetComponent<Animation>()["boxopendoor"].length;
+        box.GetComponent<Animation>().Play("boxopendoor");
     }
     void noopen()
     {

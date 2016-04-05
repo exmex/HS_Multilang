@@ -105,7 +105,7 @@ public class cardset : MonoBehaviour {
     }
     void setpic(Material m)
     {
-        transform.FindChild("pic").renderer.material = m;
+        transform.FindChild("pic").GetComponent<Renderer>().material = m;
     }
     Vector3 lastpostion;
     Vector3 uppostion = new Vector3(2.313244f, 2.465511f, 2.985396f);

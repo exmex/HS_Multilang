@@ -12,7 +12,7 @@ var cursorHeight : float;
 var now:Texture2D;
 
 function Start () {
-    Screen.showCursor = false;
+    Cursor.visible = false;
     now=myCursor;
 }
 

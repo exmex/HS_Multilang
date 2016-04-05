@@ -53,9 +53,9 @@ public class TweenColor : UITweener
 	void Awake ()
 	{
 		mWidget = GetComponentInChildren<UIWidget>();
-		Renderer ren = renderer;
+		Renderer ren = GetComponent<Renderer>();
 		if (ren != null) mMat = ren.material;
-		mLight = light;
+		mLight = GetComponent<Light>();
 	}
 
 	/// <summary>

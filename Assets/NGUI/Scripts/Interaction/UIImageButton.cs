@@ -1,6 +1,6 @@
 //----------------------------------------------
 //            NGUI: Next-Gen UI kit
-// Copyright © 2011-2013 Tasharen Entertainment
+// Copyright Â© 2011-2013 Tasharen Entertainment
 //----------------------------------------------
 
 using UnityEngine;
@@ -23,12 +23,12 @@ public class UIImageButton : MonoBehaviour
 	{
 		get
 		{
-			Collider col = collider;
+			Collider col = GetComponent<Collider>();
 			return col && col.enabled;
 		}
 		set
 		{
-			Collider col = collider;
+			Collider col = GetComponent<Collider>();
 			if (!col) return;
 
 			if (col.enabled != value)

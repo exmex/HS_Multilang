@@ -74,11 +74,11 @@ public class hero : MonoBehaviour
                 break;
         }
         //播放动画,
-        animation.Play();
+        GetComponent<Animation>().Play();
     }
     void setpic(Material m)
     {
-        transform.FindChild("pic").renderer.material = m;
+        transform.FindChild("pic").GetComponent<Renderer>().material = m;
     }
     void banpick()
     {

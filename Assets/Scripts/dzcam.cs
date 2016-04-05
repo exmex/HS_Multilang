@@ -59,14 +59,14 @@ public class dzcam : MonoBehaviour
         for(int x = 0; x < 3; x++)
         {
             Transform c = newcard();
-            c.animation.AddClip(moveto(mycarddeap.position, fpoint[x]), "come");
-            c.animation.Play("cardxuanzhuan");
-            c.animation.Blend("come", 60);
+            c.GetComponent<Animation>().AddClip(moveto(mycarddeap.position, fpoint[x]), "come");
+            c.GetComponent<Animation>().Play("cardxuanzhuan");
+            c.GetComponent<Animation>().Blend("come", 60);
             yield return new WaitForSeconds(0.5f);
             //加入到数组中
             cs.Add(c);
             //向对面发送
-            networkView.RPC("enemydraw", RPCMode.Others);
+            GetComponent<NetworkView>().RPC("enemydraw", RPCMode.Others);
         }
 
         //把硬币动画做出来
@@ -84,13 +84,13 @@ public class dzcam : MonoBehaviour
         if(!isfirst)
         {
             //向对面发送
-            networkView.RPC("enemydraw", RPCMode.Others);
+            GetComponent<NetworkView>().RPC("enemydraw", RPCMode.Others);
             //再抽一张
             //实例第4张
             Transform c = newcard();
-            c.animation.AddClip(moveto(mycarddeap.position, fpoint[3]), "come");
-            c.animation.Play("cardxuanzhuan");
-            c.animation.Blend("come", 60);
+            c.GetComponent<Animation>().AddClip(moveto(mycarddeap.position, fpoint[3]), "come");
+            c.GetComponent<Animation>().Play("cardxuanzhuan");
+            c.GetComponent<Animation>().Blend("come", 60);
             yield return new WaitForSeconds(0.5f);
 
         }
@@ -147,16 +147,16 @@ public class dzcam : MonoBehaviour
             Vector3 now = t.localPosition;
 
             AnimationClip back = moveto(now, mycarddeap.position);
-            t.animation.AddClip(back,"back");
+            t.GetComponent<Animation>().AddClip(back,"back");
            
             //让转倒播
-            t.animation["cardxuanzhuan"].speed = -1;
-            t.animation["cardxuanzhuan"].time = 1;
+            t.GetComponent<Animation>()["cardxuanzhuan"].speed = -1;
+            t.GetComponent<Animation>()["cardxuanzhuan"].time = 1;
 
 
-            t.animation.Play("cardxuanzhuan");
+            t.GetComponent<Animation>().Play("cardxuanzhuan");
             //混合播
-            t.animation.Blend("back",60);
+            t.GetComponent<Animation>().Blend("back",60);
 
             yield return new WaitForSeconds(0.5f);
 
@@ -165,17 +165,17 @@ public class dzcam : MonoBehaviour
             //实例一张
             Transform c = newcard();
             c.parent = dzban;
-            c.animation.AddClip(come, "come");
+            c.GetComponent<Animation>().AddClip(come, "come");
             //倒播
-            c.animation.Play("cardxuanzhuan");
-            c.animation.Blend("come", 60);
+            c.GetComponent<Animation>().Play("cardxuanzhuan");
+            c.GetComponent<Animation>().Blend("come", 60);
             yield return new WaitForSeconds(0.5f);
             Destroy(t.gameObject);
         }
 
         //向对手发送已经ok
         myradey = true;
-        networkView.RPC("banok", RPCMode.Others);
+        GetComponent<NetworkView>().RPC("banok", RPCMode.Others);
 
         if(myradey && enemyradey)
         {
@@ -397,7 +397,7 @@ public class dzcam : MonoBehaviour
     void draw()
     {
         //向对面发送
-        networkView.RPC("enemydraw", RPCMode.Others);
+        GetComponent<NetworkView>().RPC("enemydraw", RPCMode.Others);
 
        // cardskin.isdrag = true;
        
@@ -445,7 +445,7 @@ public class dzcam : MonoBehaviour
     {
         mycosttext.text = cost.Count + "/" + costMax;
         //向对面发送
-        networkView.RPC("costtext", RPCMode.Others, mycosttext.text);
+        GetComponent<NetworkView>().RPC("costtext", RPCMode.Others, mycosttext.text);
     }
     [RPC]
     void costtext(string text)
@@ -489,7 +489,7 @@ public class dzcam : MonoBehaviour
             "oncompletetarget",gameObject)
             );
         //向对方通告,
-        networkView.RPC("enemypaly", RPCMode.Others, "id123");
+        GetComponent<NetworkView>().RPC("enemypaly", RPCMode.Others, "id123");
         
     }
     public Transform enemybattlefield;
@@ -550,7 +550,7 @@ public class dzcam : MonoBehaviour
         //广播可以行动
         BroadcastCanattack();
         //向对面发送开始
-        networkView.RPC("turnBegin", RPCMode.Others);
+        GetComponent<NetworkView>().RPC("turnBegin", RPCMode.Others);
         ismyturn = false;
     }
     void attack()
@@ -558,7 +558,7 @@ public class dzcam : MonoBehaviour
         int attackid=getTransformId(dzminion.attacker.transform);
         int underatkid = getTransformId(dzminion.underattacker.transform);
         dzminion.attacker = null;
-        networkView.RPC("underattack", RPCMode.Others, attackid, underatkid);
+        GetComponent<NetworkView>().RPC("underattack", RPCMode.Others, attackid, underatkid);
     }
     [RPC]
     void underattack(int attackid,int underatkid)

@@ -1,6 +1,6 @@
 //----------------------------------------------
 //            NGUI: Next-Gen UI kit
-// Copyright © 2011-2013 Tasharen Entertainment
+// Copyright Â© 2011-2013 Tasharen Entertainment
 //----------------------------------------------
 
 using UnityEngine;
@@ -99,7 +99,7 @@ public class UIPanelInspector : Editor
 		{
 			UICamera cam = UICamera.FindCameraForLayer(panel.gameObject.layer);
 
-			if (cam == null || cam.camera.isOrthoGraphic)
+			if (cam == null || cam.GetComponent<Camera>().orthographic)
 			{
 				EditorGUILayout.HelpBox("Please note that depth pass will only save fillrate when used with 3D UIs, and only UIs drawn by the game camera. If you are using a separate camera for the UI, you will not see any benefit!", MessageType.Warning);
 			}

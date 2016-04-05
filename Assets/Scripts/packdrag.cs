@@ -65,7 +65,7 @@ offset = transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.m
     void gotoback()
     {
         candrag = true;
-        Destroy(gameObject.rigidbody);
+        Destroy(gameObject.GetComponent<Rigidbody>());
         transform.localPosition = lastpostion;
     }
 }  

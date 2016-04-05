@@ -1,6 +1,6 @@
 //----------------------------------------------
 //            NGUI: Next-Gen UI kit
-// Copyright © 2011-2013 Tasharen Entertainment
+// Copyright Â© 2011-2013 Tasharen Entertainment
 //----------------------------------------------
 
 using UnityEngine;
@@ -27,16 +27,16 @@ public class UIButton : UIButtonColor
 		if (isEnabled) base.OnEnable();
 		else UpdateColor(false, true);
 	}
-    //扩展事件接收者
+    //æ‰©å±•äº‹ä»¶æŽ¥æ”¶è€…
     public GameObject eventReceiver;
-    //接收事件的名字
+    //æŽ¥æ”¶äº‹ä»¶çš„åå­—
     public string functionName = "OnClick";
     bool issend = false;
 	public override void OnHover (bool isOver) { if (isEnabled) base.OnHover(isOver); }
 	public override void OnPress (bool isPressed) 
     {
         if (isEnabled) base.OnPress(isPressed);
-        //事件接收者
+        //äº‹ä»¶æŽ¥æ”¶è€…
         if (eventReceiver != null&&!issend)
         {
             eventReceiver.SendMessage(functionName);
@@ -56,12 +56,12 @@ public class UIButton : UIButtonColor
 	{
 		get
 		{
-			Collider col = collider;
+			Collider col = GetComponent<Collider>();
 			return col && col.enabled;
 		}
 		set
 		{
-			Collider col = collider;
+			Collider col = GetComponent<Collider>();
 			if (!col) return;
 
 			if (col.enabled != value)

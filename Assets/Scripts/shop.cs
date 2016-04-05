@@ -13,14 +13,14 @@ public class shop : MonoBehaviour {
 
     void close()
     {
-        animation["showbuy"].speed = -1;
-        animation["showbuy"].time = animation["showbuy"].length;
-        animation.Play("showbuy");
+        GetComponent<Animation>()["showbuy"].speed = -1;
+        GetComponent<Animation>()["showbuy"].time = GetComponent<Animation>()["showbuy"].length;
+        GetComponent<Animation>().Play("showbuy");
     }
     void show()
     {
-        animation["showbuy"].speed = 1;
-        animation.Play("showbuy");
+        GetComponent<Animation>()["showbuy"].speed = 1;
+        GetComponent<Animation>().Play("showbuy");
     }
     int nowpacknum;
     float nowmoney;

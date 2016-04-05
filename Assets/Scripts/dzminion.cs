@@ -119,9 +119,9 @@ public class dzminion : MonoBehaviour
     }
     void OnCollisionEnter()
     {
-        if(transform.rigidbody != null)
+        if(transform.GetComponent<Rigidbody>() != null)
         {
-            Destroy(transform.rigidbody);
+            Destroy(transform.GetComponent<Rigidbody>());
         }
     }
     /// <summary>
@@ -135,7 +135,7 @@ public class dzminion : MonoBehaviour
             return;
         }
 
-        ParticleSystem p = transform.FindChild("lz").particleSystem;
+        ParticleSystem p = transform.FindChild("lz").GetComponent<ParticleSystem>();
         Destroy(p);
     }
     void CanAttack()

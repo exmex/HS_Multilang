@@ -14,14 +14,14 @@ public class cardskin : MonoBehaviour
 
     void setinfo(card i)
     {
-        front = transform.FindChild("front").renderer;
-        frontkuan = transform.FindChild("frontkuan").renderer;
-        quality = transform.FindChild("quality").renderer;
+        front = transform.FindChild("front").GetComponent<Renderer>();
+        frontkuan = transform.FindChild("frontkuan").GetComponent<Renderer>();
+        quality = transform.FindChild("quality").GetComponent<Renderer>();
 
 
         skininfo = i;
         name = skininfo.cardid;
-        transform.FindChild("pic").renderer.material = skininfo.image;
+        transform.FindChild("pic").GetComponent<Renderer>().material = skininfo.image;
         if (skininfo.cnname=="")
         {
             transform.FindChild("name").GetComponent<UILabel>().text = skininfo.name;

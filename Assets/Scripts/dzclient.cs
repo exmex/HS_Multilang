@@ -65,7 +65,7 @@ public class dzclient : MonoBehaviour
 
         if (Network.isClient)
         {
-            networkView.RPC("OnHero", RPCMode.Server, (int)myclass);
+            GetComponent<NetworkView>().RPC("OnHero", RPCMode.Server, (int)myclass);
         }
        
 
@@ -119,7 +119,7 @@ public class dzclient : MonoBehaviour
         {
             //后
             //向对方发送先手消息
-            networkView.RPC("youfirst", RPCMode.Others);
+            GetComponent<NetworkView>().RPC("youfirst", RPCMode.Others);
         }
     }
     /// <summary>
@@ -130,7 +130,7 @@ public class dzclient : MonoBehaviour
     {
         Log("有玩家接入,游戏开始!");
         //向客户发送自己的英雄
-        networkView.RPC("OnHero", RPCMode.Others, (int)myclass);
+        GetComponent<NetworkView>().RPC("OnHero", RPCMode.Others, (int)myclass);
     }
     /// <summary>
     /// 当服务器准备好时

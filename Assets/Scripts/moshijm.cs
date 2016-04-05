@@ -36,7 +36,7 @@ public class moshijm : MonoBehaviour {
    void setclasspic(Material pic)
     {
         classpic.transform.parent.gameObject.SetActive(true);
-        classpic.renderer.material = pic;
+        classpic.GetComponent<Renderer>().material = pic;
     }
 #endregion
 
@@ -45,16 +45,16 @@ public class moshijm : MonoBehaviour {
    {
        tpm.GetComponent<UILabel>().text = "基本套牌";
 
-       transform.animation["jbtpshow"].speed = 1;
-       transform.animation.Play("jbtpshow");
+       transform.GetComponent<Animation>()["jbtpshow"].speed = 1;
+       transform.GetComponent<Animation>().Play("jbtpshow");
    }
 
     void Onzdytp()
     {
         tpm.GetComponent<UILabel>().text = "自定义套牌";
-        transform.animation["jbtpshow"].speed = -1;
-        transform.animation["jbtpshow"].time = transform.animation["jbtpshow"].length;
-        transform.animation.Play("jbtpshow");
+        transform.GetComponent<Animation>()["jbtpshow"].speed = -1;
+        transform.GetComponent<Animation>()["jbtpshow"].time = transform.GetComponent<Animation>()["jbtpshow"].length;
+        transform.GetComponent<Animation>().Play("jbtpshow");
     }
 
     void nochoose()
