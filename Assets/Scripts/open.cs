@@ -17,7 +17,7 @@ public class open : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         //把完成设为假
-        mok = transform.FindChild("openok");
+        mok = transform.Find("openok");
         mok.gameObject.SetActive(false);
 	}
 	
@@ -112,7 +112,7 @@ public class open : MonoBehaviour {
             Destroy(t.gameObject);
         }
         mok.gameObject.SetActive(false);
-        transform.FindChild("openpack").SendMessage("gotoback");
+        transform.Find("openpack").SendMessage("gotoback");
         canback = true;
     }
     bool canback = true;

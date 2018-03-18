@@ -5,10 +5,10 @@ public class LoginMsg : MonoBehaviour {
     public GameObject msgyes;
 	void showMsg(string t)
     {
-        UILabel l = transform.FindChild("msgbox").FindChild("msgtext").GetComponent<UILabel>();
+        UILabel l = transform.Find("msgbox").Find("msgtext").GetComponent<UILabel>();
         l.text = t;
         
-        transform.FindChild("msgbox").gameObject.SetActive(true);
+        transform.Find("msgbox").gameObject.SetActive(true);
 
     }
     void OnClick()

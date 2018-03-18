@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 9a0dced7d97275041abcda0a1393af35
 ModelImporter:
-  serializedVersion: 15
+  serializedVersion: 19
   fileIDToRecycleName:
     100000: 8f11f20.obj
     100002: 8f15b98.obj
@@ -39,6 +39,11 @@ ModelImporter:
     100066: ______004
     100068: ______005
     100070: //RootNode
+    100072: "\u5BF9\u8C61001"
+    100074: "\u5BF9\u8C61002"
+    100076: "\u5BF9\u8C61003"
+    100078: "\u5BF9\u8C61004"
+    100080: "\u5BF9\u8C61005"
     400000: 8f11f20.obj
     400002: 8f15b98.obj
     400004: 8f17b28.obj
@@ -75,6 +80,11 @@ ModelImporter:
     400066: ______004
     400068: ______005
     400070: //RootNode
+    400072: "\u5BF9\u8C61001"
+    400074: "\u5BF9\u8C61002"
+    400076: "\u5BF9\u8C61003"
+    400078: "\u5BF9\u8C61004"
+    400080: "\u5BF9\u8C61005"
     2300000: 8f11f20.obj
     2300002: 8f15b98.obj
     2300004: 8f17b28.obj
@@ -110,6 +120,11 @@ ModelImporter:
     2300064: ______003
     2300066: ______004
     2300068: ______005
+    2300070: "\u5BF9\u8C61001"
+    2300072: "\u5BF9\u8C61002"
+    2300074: "\u5BF9\u8C61003"
+    2300076: "\u5BF9\u8C61004"
+    2300078: "\u5BF9\u8C61005"
     3300000: 8f11f20.obj
     3300002: 8f15b98.obj
     3300004: 8f17b28.obj
@@ -145,6 +160,11 @@ ModelImporter:
     3300064: ______003
     3300066: ______004
     3300068: ______005
+    3300070: "\u5BF9\u8C61001"
+    3300072: "\u5BF9\u8C61002"
+    3300074: "\u5BF9\u8C61003"
+    3300076: "\u5BF9\u8C61004"
+    3300078: "\u5BF9\u8C61005"
     4300000: 8fad8c0.obj
     4300002: 8fabdb8.obj
     4300004: 8faa2b0.obj
@@ -180,6 +200,11 @@ ModelImporter:
     4300064: ______003
     4300066: ______004
     4300068: ______005
+    4300070: "\u5BF9\u8C61001"
+    4300072: "\u5BF9\u8C61002"
+    4300074: "\u5BF9\u8C61003"
+    4300076: "\u5BF9\u8C61004"
+    4300078: "\u5BF9\u8C61005"
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -188,18 +213,26 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
+    resampleCurves: 1
     optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
     animationCompression: 1
-    animationRotationError: .5
-    animationPositionError: .5
-    animationScaleError: .5
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
     clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .100000001
+    globalScale: 0.1
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -207,29 +240,39 @@ ModelImporter:
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
+    keepQuads: 0
     weldVertices: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
+    useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 1
     normalImportMode: 0
-    tangentImportMode: 1
+    tangentImportMode: 4
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
+    serializedVersion: 2
     human: []
     skeleton: []
-    armTwist: .5
-    foreArmTwist: .5
-    upperLegTwist: .5
-    legTwist: .5
-    armStretch: .0500000007
-    legStretch: .0500000007
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -107,14 +107,14 @@ public class dzminion : MonoBehaviour
     {
         if(type != CardType.khero && type != CardType.kheroPower)
         {
-            transform.FindChild("willdeath").gameObject.SetActive(false);
+            transform.Find("willdeath").gameObject.SetActive(false);
         }
     }
     void showwilldeath()
     {
         if(type != CardType.khero && type != CardType.kheroPower)
         {
-            transform.FindChild("willdeath").gameObject.SetActive(true);
+            transform.Find("willdeath").gameObject.SetActive(true);
         }
     }
     void OnCollisionEnter()
@@ -129,13 +129,13 @@ public class dzminion : MonoBehaviour
     /// </summary>
     void RemovePL()
     {
-        if(transform.FindChild("lz") == null)
+        if(transform.Find("lz") == null)
         {
             //是没有粒子的
             return;
         }
 
-        ParticleSystem p = transform.FindChild("lz").GetComponent<ParticleSystem>();
+        ParticleSystem p = transform.Find("lz").GetComponent<ParticleSystem>();
         Destroy(p);
     }
     void CanAttack()
@@ -191,9 +191,9 @@ public class dzminion : MonoBehaviour
     }
     IEnumerator showDemage(int demage)
     {
-        Transform de = transform.FindChild("demegadi");
+        Transform de = transform.Find("demegadi");
         de.gameObject.SetActive(true);
-        UILabel text = de.FindChild("demega").GetComponent<UILabel>();
+        UILabel text = de.Find("demega").GetComponent<UILabel>();
         text.text = "-" + demage.ToString();
         //更新自己的血量
         UpdateHealth();
@@ -220,7 +220,7 @@ public class dzminion : MonoBehaviour
     }
     void UpdateHealth()
     {
-        UILabel t = transform.FindChild("health").GetComponent<UILabel>();
+        UILabel t = transform.Find("health").GetComponent<UILabel>();
         t.text = getHealth().ToString();
 
         if(healthbuff < 0) //红色

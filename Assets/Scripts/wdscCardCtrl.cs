@@ -17,9 +17,9 @@ public class wdscCardCtrl : MonoBehaviour {
 
     void Awake()
     {
-        suo = transform.FindChild("suo");
-        suotxt = suo.FindChild("name").GetComponent<UILabel>();
-        num = transform.FindChild("num").GetComponent<UILabel>();
+        suo = transform.Find("suo");
+        suotxt = suo.Find("name").GetComponent<UILabel>();
+        num = transform.Find("num").GetComponent<UILabel>();
     }
 	// Update is called once per frame
 	void setinfo (card i) {

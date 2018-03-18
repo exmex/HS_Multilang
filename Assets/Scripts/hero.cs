@@ -10,8 +10,8 @@ public class hero : MonoBehaviour
     UILabel classs, heroname;
     void Start()
     {
-        classs = transform.FindChild("classs").GetComponent<UILabel>();
-        heroname = transform.FindChild("name").GetComponent<UILabel>();
+        classs = transform.Find("classs").GetComponent<UILabel>();
+        heroname = transform.Find("name").GetComponent<UILabel>();
     }
     void setclasss(CardClass c)
     {
@@ -78,7 +78,7 @@ public class hero : MonoBehaviour
     }
     void setpic(Material m)
     {
-        transform.FindChild("pic").GetComponent<Renderer>().material = m;
+        transform.Find("pic").GetComponent<Renderer>().material = m;
     }
     void banpick()
     {
@@ -92,6 +92,6 @@ public class hero : MonoBehaviour
     }
     void hidevs()
     {
-        Camera.main.transform.FindChild("vs").gameObject.SetActive(false);
+        Camera.main.transform.Find("vs").gameObject.SetActive(false);
     }
 }

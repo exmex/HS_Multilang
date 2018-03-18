@@ -110,8 +110,6 @@ public class web : MonoBehaviour
     /// <returns></returns>
     public static List<card> getPlayCards()
     {
-       
-        
         string[] cardidtext= player.cards.Split('/');
         List<card> ret = new List<card>();
         foreach (string id in cardidtext)
@@ -225,7 +223,7 @@ public class web : MonoBehaviour
     /// </summary>
     public static string getNotice()
     {
-        loadxml();
+        //loadxml();
         return webget("gg.php");
     }
     
@@ -360,7 +358,7 @@ public class web : MonoBehaviour
         AllCards = new List<card>();
         XmlDocument xml = new XmlDocument();
         //xml.Load(Application.dataPath + "\\card.xml");
-		TextAsset cardsXml=(TextAsset)Resources.Load("card");
+		var cardsXml= Resources.Load("card") as TextAsset;
 		xml.LoadXml (cardsXml.text);
         #region 读取卡数据
 
@@ -377,9 +375,9 @@ public class web : MonoBehaviour
             a.image.SetTextureOffset("_MainTex", new Vector2(0.2f, 0.43f));
 
             a.cardid = tcard.Name;
-            a.cnname = tcard.SelectSingleNode("cnname").InnerText;
+            a.cnname = ""; //tcard.SelectSingleNode("cnname").InnerText;
             a.name = tcard.SelectSingleNode("name").InnerText;
-            a.cndescription = tcard.SelectSingleNode("cndescription").InnerText;
+            a.cndescription = ""; //tcard.SelectSingleNode("cndescription").InnerText;
             a.description = tcard.SelectSingleNode("description").InnerText;
             a.quality = (CardQuality)int.Parse(tcard.SelectSingleNode("quality").InnerText);
             a.set = (CardSet)int.Parse(tcard.SelectSingleNode("set").InnerText);

@@ -14,7 +14,7 @@ public class btn : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        Transform t=transform.FindChild("light");
+        Transform t=transform.Find("light");
         if (t!=null)
         {
             mlight = t.gameObject;

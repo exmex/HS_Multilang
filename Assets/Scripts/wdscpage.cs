@@ -84,7 +84,7 @@ public class wdscpage : MonoBehaviour {
         }
 
         int end = strat + 8;
-        transform.FindChild("pagenum").GetComponent<UILabel>().text = "第" + nowpage + "页";
+        transform.Find("pagenum").GetComponent<UILabel>().text = "第" + nowpage + "页";
 
         if (end > costcard.Count) //对end的范围进行确认
         {
@@ -233,11 +233,11 @@ public class wdscpage : MonoBehaviour {
 
         if (costcard.Count == 0)
         {
-            transform.FindChild("nojg").GetComponent<UILabel>().text = "没有查找结果";
+            transform.Find("nojg").GetComponent<UILabel>().text = "没有查找结果";
         }
         else
         {
-            transform.FindChild("nojg").GetComponent<UILabel>().text = "";
+            transform.Find("nojg").GetComponent<UILabel>().text = "";
         }
 
         nowpage = 1;
@@ -253,7 +253,7 @@ public class wdscpage : MonoBehaviour {
     {
 		 //对显示的卡进行数量
         //在page中找到这张卡
-		        Transform inpagecard = transform.FindChild(c.cardid);
+		        Transform inpagecard = transform.Find(c.cardid);
 
         if (inpagecard != null)
         {

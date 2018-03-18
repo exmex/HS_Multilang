@@ -18,8 +18,8 @@ public class boxcam : MonoBehaviour
 
         //得到用户的信息
         UpdateGandEx();
-        msgbox = transform.FindChild("yesmsgbox").gameObject;
-        ynmsgbox = transform.FindChild("yesnomsgbox").gameObject;
+        msgbox = transform.Find("yesmsgbox").gameObject;
+        ynmsgbox = transform.Find("yesnomsgbox").gameObject;
     }
 
     // Update is called once per frame

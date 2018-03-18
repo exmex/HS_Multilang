@@ -7,8 +7,8 @@ public class boxMsgbox : MonoBehaviour {
     UILabel bt, text;
 	// Use this for initialization
 	void Start () {
-        bt = transform.FindChild("bt").GetComponent<UILabel>();
-        text = transform.FindChild("text").GetComponent<UILabel>();
+        bt = transform.Find("bt").GetComponent<UILabel>();
+        text = transform.Find("text").GetComponent<UILabel>();
         transform.localScale = Vector3.one * 0.00001f;
 	}
 	

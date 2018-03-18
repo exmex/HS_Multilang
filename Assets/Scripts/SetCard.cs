@@ -34,16 +34,16 @@ public class SetCard : MonoBehaviour {
     {
         info = i;
 
-        transform.FindChild("pic").transform.FindChild("pic").GetComponent<Renderer>().material = info.image;
-        transform.FindChild("cost").GetComponent<UILabel>().text = info.cost;
+        transform.Find("pic").transform.Find("pic").GetComponent<Renderer>().material = info.image;
+        transform.Find("cost").GetComponent<UILabel>().text = info.cost;
         
         if (info.cnname=="")
         {
-            transform.FindChild("name").GetComponent<UILabel>().text = info.name;
+            transform.Find("name").GetComponent<UILabel>().text = info.name;
         }
         else
         {
-            transform.FindChild("name").GetComponent<UILabel>().text = info.cnname;
+            transform.Find("name").GetComponent<UILabel>().text = info.cnname;
         }
         name = i.cardid;
         

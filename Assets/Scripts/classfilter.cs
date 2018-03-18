@@ -66,7 +66,7 @@ public class classfilter : MonoBehaviour {
         if (!isup)
         {
             nowclass = myclass;
-            transform.root.FindChild("page").SendMessage("onclass", myclass);
+            transform.root.Find("page").SendMessage("onclass", myclass);
         }
 
      

@@ -107,7 +107,7 @@ public class dzcam : MonoBehaviour
         }
 
         //出现标题与替换
-        transform.FindChild("btandbtn").gameObject.SetActive(true);
+        transform.Find("btandbtn").gameObject.SetActive(true);
     }
     //实例出一张
     Transform newcard()
@@ -341,7 +341,7 @@ public class dzcam : MonoBehaviour
 
         
         //结束回合向上
-        GameObject.Find("dz").transform.FindChild("turn").SendMessage("myturn");
+        GameObject.Find("dz").transform.Find("turn").SendMessage("myturn");
 
         ismyturn = true;
         draw();

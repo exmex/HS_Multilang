@@ -28,12 +28,12 @@ public class shop : MonoBehaviour {
     {
         if (pack1==null)
         {
-            pack1 = transform.FindChild("1pack");
-            pack2 = transform.FindChild("2pack");
-            pack7 = transform.FindChild("7pack");
-            pack15 = transform.FindChild("15pack");
-            pack40 = transform.FindChild("40pack");
-            rmb = transform.FindChild("buykuan").FindChild("text").FindChild("rmb").GetComponent<UILabel>();
+            pack1 = transform.Find("1pack");
+            pack2 = transform.Find("2pack");
+            pack7 = transform.Find("7pack");
+            pack15 = transform.Find("15pack");
+            pack40 = transform.Find("40pack");
+            rmb = transform.Find("buykuan").Find("text").Find("rmb").GetComponent<UILabel>();
         }
     
         switch (num)
@@ -84,7 +84,7 @@ public class shop : MonoBehaviour {
     {
         if (buykuan==null)
         {
-            buykuan = transform.FindChild("buykuan");
+            buykuan = transform.Find("buykuan");
         }
         
         if (nowpacknum!=1&&!isrmb)

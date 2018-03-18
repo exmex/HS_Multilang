@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 public class Login : MonoBehaviour
 {
@@ -36,7 +36,8 @@ public class Login : MonoBehaviour
         {
             //登录成功
             //载入
-            Application.LoadLevel("game");
+            //Application.LoadLevel("game");
+            SceneManager.LoadScene("game");
         }
         else
         {

@@ -13,9 +13,9 @@ public class moshicardset : MonoBehaviour {
 
     void setinfo(set i)
     {
-        Transform clogo = transform.FindChild("classlogo");
-        Transform cpic = transform.FindChild("cardsetdaiqi").FindChild("pic");
-        UILabel namelabel = cpic.transform.parent.FindChild("name").GetComponent<UILabel>();
+        Transform clogo = transform.Find("classlogo");
+        Transform cpic = transform.Find("cardsetdaiqi").Find("pic");
+        UILabel namelabel = cpic.transform.parent.Find("name").GetComponent<UILabel>();
         namelabel.text = i.name;
 
         info = i;
@@ -72,7 +72,7 @@ public class moshicardset : MonoBehaviour {
     public static set nowchoose;
     void OnMouseUpAsButton()
     {
-        Material classpic = transform.FindChild("cardsetdaiqi").FindChild("pic").GetComponent<Renderer>().material;
+        Material classpic = transform.Find("cardsetdaiqi").Find("pic").GetComponent<Renderer>().material;
         transform.root.SendMessage("setclass", info.classs);
         transform.root.SendMessage("setclasspic", classpic);
         transform.root.SendMessage("setClassname", info.name);

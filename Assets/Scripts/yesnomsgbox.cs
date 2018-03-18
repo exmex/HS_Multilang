@@ -13,8 +13,8 @@ public class yesnomsgbox : MonoBehaviour {
 	void Start()
     {
         transform.localScale = Vector3.one * 0.000001f;
-        bt = transform.FindChild("bt").GetComponent<UILabel>();
-        t = transform.FindChild("text").GetComponent<UILabel>();
+        bt = transform.Find("bt").GetComponent<UILabel>();
+        t = transform.Find("text").GetComponent<UILabel>();
     }
     void show(string str)
     {

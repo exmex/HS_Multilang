@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 0b4ef8478c33f69448528e32b5c58389
 ModelImporter:
-  serializedVersion: 15
+  serializedVersion: 19
   fileIDToRecycleName:
     100000: 246529b8.obj
     100002: 246544c0.obj
@@ -30,6 +30,17 @@ ModelImporter:
     100048: ______014
     100050: //RootNode
     100052: you1
+    100054: "\u5BF9\u8C61001"
+    100056: "\u5BF9\u8C61002"
+    100058: "\u5BF9\u8C61003"
+    100060: "\u5BF9\u8C61004"
+    100062: "\u5BF9\u8C61005"
+    100064: "\u5BF9\u8C61009"
+    100066: "\u5BF9\u8C61010"
+    100068: "\u5BF9\u8C61011"
+    100070: "\u5BF9\u8C61012"
+    100072: "\u5BF9\u8C61013"
+    100074: "\u5BF9\u8C61014"
     400000: 246529b8.obj
     400002: 246544c0.obj
     400004: 24655fc8.obj
@@ -57,6 +68,17 @@ ModelImporter:
     400048: ______014
     400050: //RootNode
     400052: you1
+    400054: "\u5BF9\u8C61001"
+    400056: "\u5BF9\u8C61002"
+    400058: "\u5BF9\u8C61003"
+    400060: "\u5BF9\u8C61004"
+    400062: "\u5BF9\u8C61005"
+    400064: "\u5BF9\u8C61009"
+    400066: "\u5BF9\u8C61010"
+    400068: "\u5BF9\u8C61011"
+    400070: "\u5BF9\u8C61012"
+    400072: "\u5BF9\u8C61013"
+    400074: "\u5BF9\u8C61014"
     2300000: 246529b8.obj
     2300002: 246544c0.obj
     2300004: 24655fc8.obj
@@ -83,6 +105,17 @@ ModelImporter:
     2300046: ______013
     2300048: ______014
     2300050: you1
+    2300052: "\u5BF9\u8C61001"
+    2300054: "\u5BF9\u8C61002"
+    2300056: "\u5BF9\u8C61003"
+    2300058: "\u5BF9\u8C61004"
+    2300060: "\u5BF9\u8C61005"
+    2300062: "\u5BF9\u8C61009"
+    2300064: "\u5BF9\u8C61010"
+    2300066: "\u5BF9\u8C61011"
+    2300068: "\u5BF9\u8C61012"
+    2300070: "\u5BF9\u8C61013"
+    2300072: "\u5BF9\u8C61014"
     3300000: 246529b8.obj
     3300002: 246544c0.obj
     3300004: 24655fc8.obj
@@ -109,6 +142,17 @@ ModelImporter:
     3300046: ______013
     3300048: ______014
     3300050: you1
+    3300052: "\u5BF9\u8C61001"
+    3300054: "\u5BF9\u8C61002"
+    3300056: "\u5BF9\u8C61003"
+    3300058: "\u5BF9\u8C61004"
+    3300060: "\u5BF9\u8C61005"
+    3300062: "\u5BF9\u8C61009"
+    3300064: "\u5BF9\u8C61010"
+    3300066: "\u5BF9\u8C61011"
+    3300068: "\u5BF9\u8C61012"
+    3300070: "\u5BF9\u8C61013"
+    3300072: "\u5BF9\u8C61014"
     4300000: 24737380.obj
     4300002: 2466cdd0.obj
     4300004: 2465cbe8.obj
@@ -135,6 +179,17 @@ ModelImporter:
     4300046: ______012
     4300048: ______013
     4300050: ______014
+    4300052: "\u5BF9\u8C61001"
+    4300054: "\u5BF9\u8C61002"
+    4300056: "\u5BF9\u8C61003"
+    4300058: "\u5BF9\u8C61004"
+    4300060: "\u5BF9\u8C61005"
+    4300062: "\u5BF9\u8C61009"
+    4300064: "\u5BF9\u8C61010"
+    4300066: "\u5BF9\u8C61011"
+    4300068: "\u5BF9\u8C61012"
+    4300070: "\u5BF9\u8C61013"
+    4300072: "\u5BF9\u8C61014"
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -143,18 +198,26 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
+    resampleCurves: 1
     optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
     animationCompression: 1
-    animationRotationError: .5
-    animationPositionError: .5
-    animationScaleError: .5
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
     clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .100000001
+    globalScale: 0.1
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -162,29 +225,39 @@ ModelImporter:
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
+    keepQuads: 0
     weldVertices: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
+    useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
-    splitTangentsAcrossUV: 1
     normalImportMode: 0
-    tangentImportMode: 1
+    tangentImportMode: 4
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
+    serializedVersion: 2
     human: []
     skeleton: []
-    armTwist: .5
-    foreArmTwist: .5
-    upperLegTwist: .5
-    legTwist: .5
-    armStretch: .0500000007
-    legStretch: .0500000007
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

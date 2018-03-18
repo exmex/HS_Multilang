@@ -14,37 +14,37 @@ public class cardskin : MonoBehaviour
 
     void setinfo(card i)
     {
-        front = transform.FindChild("front").GetComponent<Renderer>();
-        frontkuan = transform.FindChild("frontkuan").GetComponent<Renderer>();
-        quality = transform.FindChild("quality").GetComponent<Renderer>();
+        front = transform.Find("front").GetComponent<Renderer>();
+        frontkuan = transform.Find("frontkuan").GetComponent<Renderer>();
+        quality = transform.Find("quality").GetComponent<Renderer>();
 
 
         skininfo = i;
         name = skininfo.cardid;
-        transform.FindChild("pic").GetComponent<Renderer>().material = skininfo.image;
+        transform.Find("pic").GetComponent<Renderer>().material = skininfo.image;
         if (skininfo.cnname=="")
         {
-            transform.FindChild("name").GetComponent<UILabel>().text = skininfo.name;
+            transform.Find("name").GetComponent<UILabel>().text = skininfo.name;
         } 
         else
         {
-            transform.FindChild("name").GetComponent<UILabel>().text = skininfo.cnname;
+            transform.Find("name").GetComponent<UILabel>().text = skininfo.cnname;
         }
-        transform.FindChild("cost").GetComponent<UILabel>().text = skininfo.cost;
+        transform.Find("cost").GetComponent<UILabel>().text = skininfo.cost;
         
 
         if (skininfo.cndescription=="")
         {
-            transform.FindChild("description").FindChild("description").GetComponent<UILabel>().text = skininfo.description;
+            transform.Find("description").Find("description").GetComponent<UILabel>().text = skininfo.description;
         } 
         else
         {
-            transform.FindChild("description").FindChild("description").GetComponent<UILabel>().text = skininfo.cndescription;
+            transform.Find("description").Find("description").GetComponent<UILabel>().text = skininfo.cndescription;
         }
         if (skininfo.type != CardType.kability)//如果不是技能卡
         {
-            transform.FindChild("attack").GetComponent<UILabel>().text = skininfo.attack;
-            transform.FindChild("health").GetComponent<UILabel>().text = skininfo.health;
+            transform.Find("attack").GetComponent<UILabel>().text = skininfo.attack;
+            transform.Find("health").GetComponent<UILabel>().text = skininfo.health;
         }
         classskin();
         qualityskin();
@@ -154,7 +154,7 @@ public class cardskin : MonoBehaviour
         switch(skininfo.quality)
         {
             case CardQuality.kfree:
-                transform.FindChild("quality").gameObject.SetActive(false);
+                transform.Find("quality").gameObject.SetActive(false);
                 break;
 
             case CardQuality.kcommon:
@@ -184,13 +184,13 @@ public class cardskin : MonoBehaviour
         {
             return;
         }
-        UILabel racetext = transform. FindChild("race").GetComponent<UILabel>();
+        UILabel racetext = transform. Find("race").GetComponent<UILabel>();
 
         switch(skininfo.race)
         {
             case CardRace.knone:
                 racetext.text = "";
-                transform.FindChild("racedi").gameObject.SetActive(false);
+                transform.Find("racedi").gameObject.SetActive(false);
                 break;
 
             case CardRace.kbeast:

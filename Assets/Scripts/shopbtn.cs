@@ -10,7 +10,7 @@ public class shopbtn : MonoBehaviour {
     
 	// Use this for initialization
 	void Awake () {
-        mlight= transform.FindChild("light").gameObject;
+        mlight= transform.Find("light").gameObject;
         
       
         
@@ -72,7 +72,7 @@ public class shopbtn : MonoBehaviour {
     }
     void setbt(string bt)
     {
-        transform.parent.parent.FindChild("text").FindChild("bt").GetComponent<UILabel>().text = bt;
+        transform.parent.parent.Find("text").Find("bt").GetComponent<UILabel>().text = bt;
     }
     void lightup()
     {

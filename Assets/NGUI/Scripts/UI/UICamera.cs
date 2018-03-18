@@ -699,8 +699,10 @@ public class UICamera : MonoBehaviour
 				useController = false;
 			}
 		}
-		else if (Application.platform == RuntimePlatform.PS3 ||
-				 Application.platform == RuntimePlatform.XBOX360)
+		else if (Application.platform == RuntimePlatform.PS4 ||
+				 Application.platform == RuntimePlatform.XboxOne)
+		/*else if (Application.platform == RuntimePlatform.PS3 ||
+				 Application.platform == RuntimePlatform.XBOX360)*/
 		{
 			useMouse = false;
 			useTouch = false;

@@ -6,7 +6,7 @@ public class yxclick : MonoBehaviour {
     Material classpic;
 	// Use this for initialization
 	void Start () {
-        classpic = transform.FindChild("pic").GetComponent<Renderer>().material;
+        classpic = transform.Find("pic").GetComponent<Renderer>().material;
         switch (name)
         {
             case "圣骑士": myclass= CardClass.kpaladin;

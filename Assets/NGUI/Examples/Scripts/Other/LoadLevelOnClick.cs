@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [AddComponentMenu("NGUI/Examples/Load Level On Click")]
 public class LoadLevelOnClick : MonoBehaviour
@@ -9,7 +10,8 @@ public class LoadLevelOnClick : MonoBehaviour
 	{
 		if (!string.IsNullOrEmpty(levelName))
 		{
-			Application.LoadLevel(levelName);
+			//Application.LoadLevel(levelName);
+			SceneManager.LoadScene(levelName);
 		}
 	}
 }

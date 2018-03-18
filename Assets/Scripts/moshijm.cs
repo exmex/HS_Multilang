@@ -17,9 +17,9 @@ public class moshijm : MonoBehaviour {
     Vector3 goodp = new Vector3(-0.6957181f, 2.428539f, 0.5254142f);
 	// Use this for initialization
 	void Start () {
-        bt = transform.FindChild("bt").GetComponent<UILabel>();
-        tpm=transform.FindChild("tpm").GetComponent<UILabel>();
-		MosName=transform.FindChild("name").GetComponent<UILabel>();
+        bt = transform.Find("bt").GetComponent<UILabel>();
+        tpm=transform.Find("tpm").GetComponent<UILabel>();
+		MosName=transform.Find("name").GetComponent<UILabel>();
 	}
 #region 从英雄点击发送而来
     CardClass chooseClass;
@@ -68,7 +68,7 @@ public class moshijm : MonoBehaviour {
     {
         jbtpbtn.transform.Rotate(180,0,0);
         jbtpbtn.transform.Rotate(0,0,0); 
-        transform.FindChild("jbtp").localPosition = jbtppostion;
+        transform.Find("jbtp").localPosition = jbtppostion;
         iTween.MoveTo(gameObject, goodp, 1);
         nowMethod = moshijmmethod.knewset;
         nochoose();
@@ -112,7 +112,7 @@ public class moshijm : MonoBehaviour {
        //先让卡组不显示
         for (int x = 1; x < 10;x++ )
         {
-            Transform t = transform.FindChild(x.ToString());
+            Transform t = transform.Find(x.ToString());
             t.gameObject.SetActive(false);
         }
 
@@ -120,7 +120,7 @@ public class moshijm : MonoBehaviour {
         int p = 1;
         foreach (set s in sets)
         {
-            Transform t = transform.FindChild(p.ToString());
+            Transform t = transform.Find(p.ToString());
             t.gameObject.SetActive(true);
             t.SendMessage("setinfo", s);
             p++;

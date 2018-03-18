@@ -16,7 +16,7 @@ public class cardset : MonoBehaviour {
     Transform del;
 
 	void Awake () {
-        del = transform.FindChild("del");
+        del = transform.Find("del");
         
 	}
   
@@ -34,7 +34,7 @@ public class cardset : MonoBehaviour {
         edit();
         transform.root.SendMessage("editset");
         transform.parent.BroadcastMessage("hide");
-        transform.root.FindChild("classfilter").BroadcastMessage("classfilterhide", info.classs);
+        transform.root.Find("classfilter").BroadcastMessage("classfilterhide", info.classs);
         
         
     }
@@ -100,12 +100,12 @@ public class cardset : MonoBehaviour {
     void setname(string n)
     {
         info.name = n;
-        transform.FindChild("name").FindChild("Label").GetComponent<UILabel>().text=n;
+        transform.Find("name").Find("Label").GetComponent<UILabel>().text=n;
         name = n;
     }
     void setpic(Material m)
     {
-        transform.FindChild("pic").GetComponent<Renderer>().material = m;
+        transform.Find("pic").GetComponent<Renderer>().material = m;
     }
     Vector3 lastpostion;
     Vector3 uppostion = new Vector3(2.313244f, 2.465511f, 2.985396f);
@@ -114,7 +114,7 @@ public class cardset : MonoBehaviour {
         lastpostion = transform.localPosition;
         transform.position = uppostion;
         Editing = true;
-        infokuan = transform.root.FindChild("setinfo");
+        infokuan = transform.root.Find("setinfo");
     }
     void hide()
     {
@@ -276,7 +276,7 @@ public class cardset : MonoBehaviour {
     {
         if (page==null)
         {
-            page = transform.root.FindChild("page");
+            page = transform.root.Find("page");
         }
         page.SendMessage("updatecard", c);
     }
@@ -317,7 +317,7 @@ public class cardset : MonoBehaviour {
         c.count--;
         if (isinset(c.cardid)) //有
         {
-            transform.FindChild(c.cardid).SendMessage("addone",c);
+            transform.Find(c.cardid).SendMessage("addone",c);
         }
         else
         {
@@ -375,7 +375,7 @@ public class cardset : MonoBehaviour {
     {
         if (cardcount==null)
         {
-            cardcount = transform.root.FindChild("cardcount").GetComponent<UILabel>();
+            cardcount = transform.root.Find("cardcount").GetComponent<UILabel>();
         }
         cardcount.text = t;
     }
@@ -430,9 +430,9 @@ public class cardset : MonoBehaviour {
 
         for (int x = 0; x <7;x++ )
         {
-            infokuan.FindChild(x.ToString()).GetComponent<UILabel>().text = costcount[x].ToString();
+            infokuan.Find(x.ToString()).GetComponent<UILabel>().text = costcount[x].ToString();
             //得到条形
-            Transform t = infokuan.FindChild("c" + x);
+            Transform t = infokuan.Find("c" + x);
 
             float y = costcount[x] / max;//NaN测试
             if (float.IsNaN(y))
@@ -448,7 +448,7 @@ public class cardset : MonoBehaviour {
 
         foreach (Transform t in setcards)
         {
-            int cardcost = int.Parse(t.transform.FindChild("cost").GetComponent<UILabel>().text);
+            int cardcost = int.Parse(t.transform.Find("cost").GetComponent<UILabel>().text);
 
             if (cardcost > cost)
             {

@@ -111,7 +111,7 @@ public class wdscjm : MonoBehaviour
     {
 		cardset.nowEditingSet.transform.parent.BroadcastMessage("goback");
         //职业标签 回来
-        transform.root.FindChild("classfilter").BroadcastMessage("gotoback");
+        transform.root.Find("classfilter").BroadcastMessage("gotoback");
 
         //不可加入卡牌
         nowMod = wdscmMod.look;
